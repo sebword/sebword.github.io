@@ -39,19 +39,23 @@
   <section id="home" class="hero-section">
     <canvas id="particle-canvas"></canvas>
     <div class="container">
-      <h1 class="hero-title">
-        <span class="hero-subtitle" data-i18n="hero.greeting">Hola, soy</span>
-        <span class="gradient-text main-title" data-i18n="hero.name">Sebastián Ordoñez</span>
-      </h1>
-      <h2 class="hero-desc" data-i18n="hero.description">
-        Ingeniero Multimedia especializado en crear contenido visual escalable con Inteligencia Artificial y estrategias de Marketing Digital.
-      </h2>
-      <p class="hero-quote" data-i18n="hero.quote">
-        "Donde la tecnología se encuentra con la creatividad, ahí es donde ocurre la magia."
-      </p>
-      <div class="hero-buttons">
-        <a href="proyectos.html" class="btn btn-primary" data-i18n="hero.viewWork">Ver mi trabajo</a>
-        <a href="#contact" class="btn btn-outline" data-i18n="hero.contact">Contáctame</a>
+      <div class="hero-content">
+        <div class="hero-image-container">
+          <img src="img/Yo.png" alt="Sebastián Ordoñez" class="hero-image" />
+        </div>
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="hero-subtitle" data-i18n="hero.greeting">Hola, soy</span>
+            <span class="gradient-text main-title" data-i18n="hero.name">Sebastián Ordoñez</span>
+          </h1>
+          <h2 class="hero-desc" data-i18n="hero.description">
+            Ingeniero Multimedia especializado en crear contenido visual escalable con Inteligencia Artificial y estrategias de Marketing Digital.
+          </h2>
+          <div class="hero-buttons">
+            <a href="proyectos.html" class="btn btn-primary" data-i18n="hero.viewWork">Ver mi trabajo</a>
+            <a href="#contact" class="btn btn-outline" data-i18n="hero.contact">Contáctame</a>
+          </div>
+        </div>
       </div>
     </div>
     <a href="#journey" class="scroll-indicator">
@@ -263,25 +267,25 @@
             </div>
           </div>
     
-          <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+          <form class="contact-form" data-aos="fade-up" data-aos-delay="200" action="mailto:sebastianor27@gmail.com" method="post" enctype="text/plain">
             <h3 data-i18n="contact.formTitle">Creamos algo increíble juntos</h3>
-    
+
             <div class="form-group">
-              <input type="text" placeholder="Tu Nombre" data-i18n-placeholder="contact.name" required>
+              <input type="text" name="nombre" placeholder="Tu Nombre" data-i18n-placeholder="contact.name" required>
             </div>
-    
+
             <div class="form-group">
-              <input type="email" placeholder="Tu Correo" data-i18n-placeholder="contact.emailInput" required>
+              <input type="email" name="correo" placeholder="Tu Correo" data-i18n-placeholder="contact.emailInput" required>
             </div>
-    
+
             <div class="form-group">
-              <input type="text" placeholder="Asunto" data-i18n-placeholder="contact.subject">
+              <input type="text" name="asunto" placeholder="Asunto" data-i18n-placeholder="contact.subject">
             </div>
-    
+
             <div class="form-group">
-              <textarea placeholder="Tu Mensaje" data-i18n-placeholder="contact.message" rows="5" required></textarea>
+              <textarea name="mensaje" placeholder="Tu Mensaje" data-i18n-placeholder="contact.message" rows="5" required></textarea>
             </div>
-    
+
             <button type="submit" class="btn btn-primary">
               <i class="fas fa-paper-plane"></i> <span data-i18n="contact.send">Enviar Mensaje</span>
             </button>
