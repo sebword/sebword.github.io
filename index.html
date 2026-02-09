@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page.title">Sebastián Ordoñez - Portafolio</title>
+  <meta name="description" content="Portfolio de Sebastián Ordoñez, ingeniero multimedia y diseñador creativo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">
+        <span class="gradient-text" data-i18n="brandTitle">Hoja de vida</span><span class="dot"></span>
+      </a>
+      <div class="desktop-menu">
+        <a href="#home" class="nav-item" data-i18n="nav.home">Inicio</a>
+        <a href="#journey" class="nav-item" data-i18n="nav.journey">Trayectoria</a>
+        <a href="#skills" class="nav-item" data-i18n="nav.skills">Habilidades</a>
+        <a href="proyectos.html" class="nav-item" data-i18n="nav.projects">Proyectos</a>
+        <a href="#education" class="nav-item" data-i18n="nav.education">Educación</a>
+        <a href="#about" class="nav-item" data-i18n="nav.about">Sobre mí</a>
+        <a href="#contact" class="nav-item" data-i18n="nav.contact">Contacto</a>
+      </div>
+      <div class="language-switch">
+        <button id="lang-toggle" class="btn btn-outline">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <canvas id="particle-canvas"></canvas>
+    <div class="container">
+      <h1 class="hero-title">
+        <span class="hero-subtitle" data-i18n="hero.greeting">Hola, soy</span>
+        <span class="gradient-text main-title" data-i18n="hero.name">Sebastián Ordoñez</span>
+      </h1>
+      <h2 class="hero-desc" data-i18n="hero.description">
+        Ingeniero Multimedia especializado en crear contenido visual escalable con Inteligencia Artificial y estrategias de Marketing Digital.
+      </h2>
+      <p class="hero-quote" data-i18n="hero.quote">
+        "Donde la tecnología se encuentra con la creatividad, ahí es donde ocurre la magia."
+      </p>
+      <div class="hero-buttons">
+        <a href="proyectos.html" class="btn btn-primary" data-i18n="hero.viewWork">Ver mi trabajo</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero.contact">Contáctame</a>
+      </div>
+    </div>
+    <a href="#journey" class="scroll-indicator">
+      <span data-i18n="hero.scrollDown">Desplázate hacia abajo</span>
+      <div class="scroll-dot-container"><div class="scroll-dot"></div></div>
+    </a>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Journey Section -->
+  <section id="journey" class="section journey-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up" data-i18n="journey.title">Trayectoria Profesional</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-icon"><i class="fas fa-store"></i></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" data-i18n="journey.role1">Ventas y Atención al Cliente</h3>
+            <h4 class="timeline-company" data-i18n="journey.company1">Jewelry and More (Houston, EE. UU.)</h4>
+            <div class="timeline-period">
+              <i class="fas fa-calendar"></i>
+              <span data-i18n="journey.period1">Experiencia Internacional</span>
+            </div>
+            <p class="timeline-desc" data-i18n="journey.desc1">
+              Comprensión del valor del producto, experiencia de usuario y comunicación efectiva, aportando visión estratégica y comercial.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-icon"><i class="fas fa-pizza-slice"></i></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" data-i18n="journey.role2">Diseñador Gráfico</h3>
+            <h4 class="timeline-company" data-i18n="journey.company2">Why Not Pizza</h4>
+            <div class="timeline-period">
+              <i class="fas fa-calendar"></i>
+              <span data-i18n="journey.period2">Sector Gastronómico</span>
+            </div>
+            <p class="timeline-desc" data-i18n="journey.desc2">
+              Desarrollo de piezas gráficas para redes sociales, contenido para menús digitales y material para display menu.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-icon"><i class="fas fa-ice-cream"></i></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" data-i18n="journey.role3">Diseñador Gráfico</h3>
+            <h4 class="timeline-company" data-i18n="journey.company3">Nova Ice Cream</h4>
+            <div class="timeline-period">
+              <i class="fas fa-calendar"></i>
+              <span data-i18n="journey.period3">Sector Gastronómico</span>
+            </div>
+            <p class="timeline-desc" data-i18n="journey.desc3">
+              Creación de identidad visual y contenido digital atractivo para productos de heladería.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="timeline-icon"><i class="fas fa-hamburger"></i></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" data-i18n="journey.role4">Diseñador de Marketing</h3>
+            <h4 class="timeline-company" data-i18n="journey.company4">Santi Burger</h4>
+            <div class="timeline-period">
+              <i class="fas fa-calendar"></i>
+              <span data-i18n="journey.period4">Sector Gastronómico</span>
+            </div>
+            <p class="timeline-desc" data-i18n="journey.desc4">
+              Diseño de piezas gráficas estratégicas para campañas de marketing y promoción.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title" data-i18n="journey.role5">Diseñador Multimedia & Ads Specialist</h3>
+            <h4 class="timeline-company" data-i18n="journey.company5">Freelance / Varios Sectores</h4>
+            <div class="timeline-period">
+              <i class="fas fa-calendar"></i>
+              <span data-i18n="journey.period5">Actualidad</span>
+            </div>
+            <p class="timeline-desc" data-i18n="journey.desc5">
+              Gestión de Meta Ads y TikTok Ads. Creación de contenido visual escalable con IA para cualquier sector.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up" data-i18n="education.title">Educación y Certificaciones</h2>
+      <div class="education-grid">
+        <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="education-content">
+            <h3 class="education-title" data-i18n="education.degree1">Bachillerato</h3>
+            <h4 class="education-institution" data-i18n="education.institution1">Colegio Campestre San Juan de la Loma</h4>
+            <div class="education-year"><i class="fas fa-calendar"></i><span data-i18n="education.year1">2018</span></div>
+          </div>
+        </div>
+        <div class="education-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="education-icon"><i class="fas fa-certificate"></i></div>
+          <div class="education-content">
+            <h3 class="education-title" data-i18n="education.degree2">Certificado de Inglés B2</h3>
+            <h4 class="education-institution" data-i18n="education.institution2">Crossing Institute, Houston, TX</h4>
+            <div class="education-year"><i class="fas fa-calendar"></i><span data-i18n="education.year2">2019</span></div>
+          </div>
+        </div>
+        <div class="education-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="education-icon"><i class="fas fa-university"></i></div>
+          <div class="education-content">
+            <h3 class="education-title" data-i18n="education.degree_uac">Ingeniería Multimedia</h3>
+            <h4 class="education-institution" data-i18n="education.institution_uac">Universidad Autónoma de Cali</h4>
+            <div class="education-year"><i class="fas fa-calendar"></i><span data-i18n="education.year_uac">2020 - 2022</span></div>
+          </div>
+        </div>
+        <div class="education-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="education-icon"><i class="fas fa-university"></i></div>
+          <div class="education-content">
+            <h3 class="education-title" data-i18n="education.degree3">Ingeniería Multimedia</h3>
+            <h4 class="education-institution" data-i18n="education.institution3">Universidad San Buenaventura</h4>
+            <div class="education-year"><i class="fas fa-calendar"></i><span data-i18n="education.year3">2022 - Presente (2026)</span></div>
+          </div>
+        </div>
+        <div class="education-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="education-icon"><i class="fas fa-award"></i></div>
+          <div class="education-content">
+            <h3 class="education-title" data-i18n="education.degree4">Dropshipping y Comercio Electrónico</h3>
+            <h4 class="education-institution" data-i18n="education.institution4">Certificación de Curso Online</h4>
+            <div class="education-year"><i class="fas fa-calendar"></i><span data-i18n="education.year4">2022</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="about.title">Perfil Profesional</h2>
+      <div class="about-content" data-aos="fade-up">
+        <div class="about-text">
+          <p data-i18n="about.p1">
+            A lo largo de mi formación he desarrollado una base sólida en diseño visual, gestión de proyectos y tecnologías multimedia. He trabajado como diseñador gráfico, creando identidades visuales y piezas gráficas para marcas y negocios, adaptándome a diferentes industrias y objetivos de comunicación.
+          </p>
+          <p data-i18n="about.p2">
+            Mi enfoque se centra en optimizar tiempos y recursos sin sacrificar calidad, utilizando herramientas de la suite Adobe (Photoshop, After Effects) y soluciones basadas en inteligencia artificial para producir piezas gráficas, assets visuales y contenido digital adaptable.
+          </p>
+          <p data-i18n="about.p3">
+            Me caracterizo por ser proactivo, organizado y adaptable. Mi objetivo es seguir creciendo como diseñador multimedia especializado en IA y marketing digital, aportando soluciones visuales modernas y orientadas a resultados para cualquier sector.
+          </p>
+        </div>
+        <div class="interests-grid">
+          <div class="interest-item"><i class="fas fa-rocket"></i><span data-i18n="about.spirituality">Proactividad</span></div>
+          <div class="interest-item"><i class="fas fa-palette"></i><span data-i18n="about.art">Diseño Gráfico</span></div>
+          <div class="interest-item"><i class="fas fa-robot"></i><span data-i18n="about.numerology">Inteligencia Artificial</span></div>
+          <div class="interest-item"><i class="fas fa-bullhorn"></i><span data-i18n="about.gaming">Marketing Digital</span></div>
+          <div class="interest-item"><i class="fas fa-users"></i><span data-i18n="about.creative">Trabajo en Equipo</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="contact.title">Conectemos</h2>
+    
+        <div class="contact-container">
+          <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+            <h3 data-i18n="contact.subtitle">Contáctame</h3>
+            <p data-i18n="contact.text">¿Interesado en trabajar juntos? ¡No dudes en escribirme!</p>
+    
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span data-i18n="contact.phone">318 8474325</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span data-i18n="contact.email">sebastianor27@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="contact.location">Jamundí, Colombia</span>
+              </div>
+            </div>
+    
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Behance">
+                <i class="fab fa-behance"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+    
+          <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+            <h3 data-i18n="contact.formTitle">Creamos algo increíble juntos</h3>
+    
+            <div class="form-group">
+              <input type="text" placeholder="Tu Nombre" data-i18n-placeholder="contact.name" required>
+            </div>
+    
+            <div class="form-group">
+              <input type="email" placeholder="Tu Correo" data-i18n-placeholder="contact.emailInput" required>
+            </div>
+    
+            <div class="form-group">
+              <input type="text" placeholder="Asunto" data-i18n-placeholder="contact.subject">
+            </div>
+    
+            <div class="form-group">
+              <textarea placeholder="Tu Mensaje" data-i18n-placeholder="contact.message" rows="5" required></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> <span data-i18n="contact.send">Enviar Mensaje</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="gradient-text" data-i18n="footer.name">Muchas gracias por su tiempo</span>
+            <span class="dot"></span>
+          </div>
+    
+          <p class="footer-copyright">
+            &copy; 2025 <span data-i18n="footer.fullName">Sebastián Ordoñez Vargas</span>. <span data-i18n="footer.rights">Todos los derechos reservados.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

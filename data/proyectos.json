@@ -1,0 +1,38 @@
+{
+    "proyectos": [
+      {
+        "titulo": "Branding Restaurante",
+        "cliente": "Arepas Lucianita",
+        "fecha": "Feb 2022",
+        "icono": "fas fa-store",
+        "descripcion": "Desarrollo completo de identidad visual: logo, empaques y branding físico y digital."
+      },
+      {
+        "titulo": "E-commerce Norato",
+        "cliente": "Norato Churros",
+        "fecha": "Jun 2022",
+        "icono": "fas fa-shopping-cart",
+        "descripcion": "Diseño de tienda online con Shopify, catálogo digital y optimización móvil."
+      },
+      {
+        "titulo": "Reels Corporativos",
+        "cliente": "MarkifyLab",
+        "fecha": "Mar 2023",
+        "icono": "fas fa-video",
+        "descripcion": "Producción de contenido en video para redes sociales y campañas digitales."
+      }
+    ],
+    "videos": [
+      {
+        "titulo": "Reel Restaurante",
+        "categoria": "Publicidad Digital",
+        "archivo": "assets/video1.mp4"
+      },
+      {
+        "titulo": "Demo E-commerce",
+        "categoria": "Diseño Web",
+        "archivo": "assets/video2.mp4"
+      }
+    ]
+  }
+  

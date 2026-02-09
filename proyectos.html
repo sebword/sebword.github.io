@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page.title">Sebastián Ordoñez - Portafolio</title>
+  <meta name="description" content="Portfolio de Sebastián Ordoñez, ingeniero multimedia y diseñador creativo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para mejorar la visualización de proyectos */
+    .project-detail-card {
+      background-color: rgba(26, 31, 44, 0.8);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 15px;
+      padding: 3rem;
+      max-width: 900px;
+      width: 100%;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    
+    .project-icon-large {
+      font-size: 4rem;
+      color: var(--color-cyber-turquoise);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 20px rgba(45, 212, 191, 0.4);
+    }
+    
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    
+    .tag {
+      background-color: rgba(139, 92, 246, 0.15);
+      color: var(--color-cyber-purple-light);
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .tag:hover {
+      background-color: var(--color-cyber-purple);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .project-client {
+        color: var(--color-cyber-turquoise);
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="gradient-text" data-i18n="brandTitle">Hoja de vida</span><span class="dot"></span>
+      </a>
+      <div class="desktop-menu">
+        <a href="index.html#home" class="nav-item" data-i18n="nav.home">Inicio</a>
+        <a href="index.html#journey" class="nav-item" data-i18n="nav.journey">Trayectoria</a>
+        <a href="index.html#education" class="nav-item" data-i18n="nav.education">Educación</a>
+        <a href="index.html#about" class="nav-item" data-i18n="nav.about">Sobre mí</a>
+        <a href="index.html#contact" class="nav-item" data-i18n="nav.contact">Contacto</a>
+      </div>
+      <div class="language-switch">
+        <button id="lang-toggle" class="btn btn-outline">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Proyecto 1: Why Not Pizza -->
+  <section id="whynot" class="section full-project-screen cyber-blue-light">
+    <div class="container" data-aos="zoom-in">
+      <div class="project-detail-card">
+        <div class="project-icon-large"><i class="fas fa-pizza-slice"></i></div>
+        <span class="project-client">Why Not Pizza</span>
+        <h2 class="section-title" style="margin-bottom: 1rem;">Diseño Gráfico & Menús Digitales</h2>
+        <p class="project-description">
+          Desarrollo integral de piezas gráficas para redes sociales, diseño de contenido visual para menús digitales y material gráfico para display menu. Enfoque en apetitosidad visual y claridad de la información para potenciar las ventas en el punto físico y digital.
+        </p>
+        <div class="tags-container">
+          <span class="tag">Diseño Gráfico</span>
+          <span class="tag">Redes Sociales</span>
+          <span class="tag">Menú Digital</span>
+          <span class="tag">Adobe Photoshop</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyecto 2: Nova Ice Cream -->
+  <section id="nova" class="section full-project-screen cyber-blue">
+    <div class="container" data-aos="zoom-in">
+      <div class="project-detail-card">
+        <div class="project-icon-large"><i class="fas fa-ice-cream"></i></div>
+        <span class="project-client">Nova Ice Cream</span>
+        <h2 class="section-title" style="margin-bottom: 1rem;">Identidad Visual & Contenido</h2>
+        <p class="project-description">
+          Creación de identidad visual y piezas gráficas atractivas para productos de heladería. Diseño enfocado en transmitir frescura y calidad, adaptado a diferentes formatos de impresión y medios digitales.
+        </p>
+        <div class="tags-container">
+          <span class="tag">Branding</span>
+          <span class="tag">Identidad Visual</span>
+          <span class="tag">Fotografía de Producto</span>
+          <span class="tag">Diseño Publicitario</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyecto 3: Santi Burger -->
+  <section id="santiburger" class="section full-project-screen cyber-blue-light">
+    <div class="container" data-aos="zoom-in">
+      <div class="project-detail-card">
+        <div class="project-icon-large"><i class="fas fa-hamburger"></i></div>
+        <span class="project-client">Santi Burger</span>
+        <h2 class="section-title" style="margin-bottom: 1rem;">Marketing & Promoción</h2>
+        <p class="project-description">
+          Diseño de piezas gráficas estratégicas para campañas de marketing. Creación de contenido visual de alto impacto para promociones, lanzamientos de nuevos productos y campañas de fidelización.
+        </p>
+        <div class="tags-container">
+          <span class="tag">Marketing Digital</span>
+          <span class="tag">Publicidad</span>
+          <span class="tag">Diseño Promocional</span>
+          <span class="tag">Estrategia Visual</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyecto 4: Marketing & IA -->
+  <section id="marketing-ia" class="section full-project-screen cyber-blue">
+    <div class="container" data-aos="zoom-in">
+      <div class="project-detail-card">
+        <div class="project-icon-large"><i class="fas fa-robot"></i></div>
+        <span class="project-client">Freelance / Proyectos Personales</span>
+        <h2 class="section-title" style="margin-bottom: 1rem;">Estrategia Digital & IA</h2>
+        <p class="project-description">
+          Gestión profesional de campañas publicitarias en <strong>Meta Ads</strong> (Facebook/Instagram) y <strong>TikTok Ads</strong>. Implementación de flujos de trabajo con <strong>Inteligencia Artificial</strong> para crear contenido visual escalable y de alta calidad para cualquier sector, no limitado al gastronómico.
+        </p>
+        <div class="tags-container">
+          <span class="tag">Meta Ads</span>
+          <span class="tag">TikTok Ads</span>
+          <span class="tag">Inteligencia Artificial</span>
+          <span class="tag">Automatización</span>
+          <span class="tag">Scalable Content</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

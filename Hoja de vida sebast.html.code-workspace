@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../xpp/htdocs/CursoIng"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Hoja de vida.html"
+	}
+}
