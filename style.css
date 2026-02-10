@@ -363,52 +363,6 @@
     margin-top: 2rem;
   }
   
-  .scroll-indicator {
-    position: absolute;
-    bottom: 6rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--color-gray-400);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .scroll-indicator:hover {
-    color: var(--color-cyber-turquoise);
-  }
-  
-  .scroll-indicator span {
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .scroll-dot-container {
-    width: 24px;
-    height: 40px;
-    border: 2px solid var(--color-gray-400);
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .scroll-dot {
-    width: 6px;
-    height: 6px;
-    background-color: var(--color-gray-400);
-    border-radius: 50%;
-    margin-top: 8px;
-    animation: scroll-animation 2s ease-in-out infinite;
-  }
-  
-  @keyframes scroll-animation {
-    0% { transform: translateY(0); opacity: 1; }
-    50% { transform: translateY(15px); opacity: 0.5; }
-    100% { transform: translateY(0); opacity: 1; }
-  }
   
   /* Journey Section */
 .journey-section {
