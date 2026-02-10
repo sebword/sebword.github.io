@@ -18,6 +18,28 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
     
+    // Handle navigation active states
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-item');
+    
+    window.addEventListener('scroll', function() {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === '#' + current) {
+          item.classList.add('active');
+        }
+      });
+    });
+    
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
@@ -31,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Close mobile menu when clicking a nav item
-    const navItems = document.querySelectorAll('.mobile-menu .nav-item');
-    navItems.forEach(item => {
+    const mobileNavItems = document.querySelectorAll('.mobile-menu .nav-item');
+    mobileNavItems.forEach(item => {
       item.addEventListener('click', function() {
         mobileMenu.classList.add('hidden');
         openIcon.classList.remove('hidden');
