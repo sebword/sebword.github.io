@@ -18,17 +18,17 @@
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="logo">
-        <span class="gradient-text">Portafolio Profesional</span><span class="dot"></span>
+        <span class="gradient-text" data-i18n="nav.historial">Portafolio Profesional</span><span class="dot"></span>
       </a>
       <div class="desktop-menu">
-        <a href="index.html" class="nav-item">Inicio</a>
-        <a href="index.html#journey" class="nav-item">Trayectoria</a>
-        <a href="index.html#skills" class="nav-item">Habilidades</a>
-        <a href="proyectos.html" class="nav-item">Proyectos</a>
-        <a href="index.html#education" class="nav-item">Educación</a>
-        <a href="index.html#about" class="nav-item">Sobre mí</a>
-        <a href="Portafolio profesional.html" class="nav-item active">Portafolio Profesional</a>
-        <a href="index.html#contact" class="nav-item">Contacto</a>
+        <a href="index.html" class="nav-item" data-i18n="nav.home">Inicio</a>
+        <a href="index.html#journey" class="nav-item" data-i18n="nav.journey">Trayectoria</a>
+        <a href="index.html#skills" class="nav-item" data-i18n="nav.skills">Habilidades</a>
+        <a href="proyectos.html" class="nav-item" data-i18n="nav.projects">Proyectos</a>
+        <a href="index.html#education" class="nav-item" data-i18n="nav.education">Educación</a>
+        <a href="index.html#about" class="nav-item" data-i18n="nav.about">Sobre mí</a>
+        <a href="Portafolio profesional.html" class="nav-item active" data-i18n="nav.historial">Portafolio Profesional</a>
+        <a href="index.html#contact" class="nav-item" data-i18n="nav.contact">Contacto</a>
       </div>
       <div class="language-switch">
         <button id="lang-toggle" class="btn btn-outline">EN</button>
@@ -43,20 +43,20 @@
       <div class="hero-content">
         <div class="hero-text">
           <h1 class="hero-title">
-            <span class="gradient-text main-title">Portafolio Profesional</span>
+            <span class="gradient-text main-title" data-i18n="portfolio.heroTitle">Portafolio Profesional</span>
           </h1>
-          <h2 class="hero-desc">
+          <h2 class="hero-desc" data-i18n="portfolio.heroDesc">
             Explora mi trabajo creativo y proyectos multimedia
           </h2>
           <div class="hero-buttons">
-            <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
-            <a href="#gallery" class="btn btn-outline">Ver Galería</a>
+            <a href="index.html" class="btn btn-primary" data-i18n="portfolio.backHome">Volver al Inicio</a>
+            <a href="#gallery" class="btn btn-outline" data-i18n="portfolio.viewGallery">Ver Galería</a>
           </div>
         </div>
       </div>
     </div>
     <a href="#gallery" class="scroll-indicator">
-      <span>Desplázate hacia la galería</span>
+      <span data-i18n="portfolio.scrollGallery">Desplázate hacia la galería</span>
       <div class="scroll-dot-container"><div class="scroll-dot"></div></div>
     </a>
     <div class="hero-overlay"></div>
@@ -65,16 +65,16 @@
   <!-- Gallery Section -->
   <section id="gallery" class="section gallery-section">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Portafolio Profesional</h2>
+      <h2 class="section-title" data-aos="fade-up" data-i18n="portfolio.sectionTitle">Portafolio Profesional</h2>
       
       <!-- Category Filter -->
       <div class="category-filter" data-aos="fade-up" data-aos-delay="100">
-        <button class="category-btn active" data-category="all">Todas</button>
-        <button class="category-btn" data-category="gastronomico">Gastronómico</button>
-        <button class="category-btn" data-category="comercial">Comercial</button>
-        <button class="category-btn" data-category="manejo">Manejo de Imágenes</button>
-        <button class="category-btn" data-category="terror">Terror</button>
-        <button class="category-btn" data-category="series">Series</button>
+        <button class="category-btn active" data-category="all" data-i18n="portfolio.filter.all">Todas</button>
+        <button class="category-btn" data-category="gastronomico" data-i18n="portfolio.filter.gastronomic">Gastronómico</button>
+        <button class="category-btn" data-category="comercial" data-i18n="portfolio.filter.commercial">Comercial</button>
+        <button class="category-btn" data-category="manejo" data-i18n="portfolio.filter.imageEditing">Manejo de Imágenes</button>
+        <button class="category-btn" data-category="terror" data-i18n="portfolio.filter.horror">Terror</button>
+        <button class="category-btn" data-category="series" data-i18n="portfolio.filter.series">Series</button>
       </div>
 
       <!-- Gallery Grid -->
@@ -91,8 +91,8 @@
       <div class="modal-image-container">
         <img id="modal-image" src="" alt="">
         <div class="modal-image-info">
-          <h3 id="modal-image-title">Título de la Imagen</h3>
-          <p id="modal-image-category">Categoría</p>
+          <h3 id="modal-image-title" data-i18n="portfolio.modalTitle">Título de la Imagen</h3>
+          <p id="modal-image-category" data-i18n="portfolio.modalCategory">Categoría</p>
         </div>
       </div>
       <div class="modal-navigation">
