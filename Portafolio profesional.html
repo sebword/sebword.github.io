@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Profesional - Sebastián Ordoñez</title>
+  <meta name="description" content="Portafolio profesional de Sebastián Ordoñez, ingeniero multimedia y diseñador creativo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="gradient-text">Portafolio Profesional</span><span class="dot"></span>
+      </a>
+      <div class="desktop-menu">
+        <a href="index.html" class="nav-item">Inicio</a>
+        <a href="index.html#journey" class="nav-item">Trayectoria</a>
+        <a href="index.html#skills" class="nav-item">Habilidades</a>
+        <a href="proyectos.html" class="nav-item">Proyectos</a>
+        <a href="index.html#education" class="nav-item">Educación</a>
+        <a href="index.html#about" class="nav-item">Sobre mí</a>
+        <a href="Portafolio profesional.html" class="nav-item active">Portafolio Profesional</a>
+        <a href="index.html#contact" class="nav-item">Contacto</a>
+      </div>
+      <div class="language-switch">
+        <button id="lang-toggle" class="btn btn-outline">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section portfolio-hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="gradient-text main-title">Portafolio Profesional</span>
+          </h1>
+          <h2 class="hero-desc">
+            Explora mi trabajo creativo y proyectos multimedia
+          </h2>
+          <div class="hero-buttons">
+            <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
+            <a href="#gallery" class="btn btn-outline">Ver Galería</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#gallery" class="scroll-indicator">
+      <span>Desplázate hacia la galería</span>
+      <div class="scroll-dot-container"><div class="scroll-dot"></div></div>
+    </a>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Portafolio Profesional</h2>
+      
+      <!-- Category Filter -->
+      <div class="category-filter" data-aos="fade-up" data-aos-delay="100">
+        <button class="category-btn active" data-category="all">Todas</button>
+        <button class="category-btn" data-category="gastronomico">Gastronómico</button>
+        <button class="category-btn" data-category="comercial">Comercial</button>
+        <button class="category-btn" data-category="manejo">Manejo de Imágenes</button>
+        <button class="category-btn" data-category="terror">Terror</button>
+        <button class="category-btn" data-category="series">Series</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="gallery-grid" class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+        <!-- Images will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Modal -->
+  <div id="gallery-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-image-container">
+        <img id="modal-image" src="" alt="">
+        <div class="modal-image-info">
+          <h3 id="modal-image-title">Título de la Imagen</h3>
+          <p id="modal-image-category">Categoría</p>
+        </div>
+      </div>
+      <div class="modal-navigation">
+        <button id="modal-prev" class="modal-nav-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="modal-next" class="modal-nav-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="gradient-text">Portafolio Profesional</span>
+          <span class="dot"></span>
+        </div>
+        <p class="footer-copyright">
+          &copy; 2025 Sebastián Ordoñez Vargas. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
